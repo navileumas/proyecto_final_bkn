@@ -1,0 +1,10 @@
+<form method="GET">
+    <input type="text" name="q" placeholder="Buscar libros" value="{{ query }}">
+    <button type="submit">Buscar</button>
+</form>
+
+<ul>
+    {% for libro in libros %}
+    <li>{{ libro.titulo }} - {{ libro.autor }}</li>
+    {% endfor %}
+</ul>
